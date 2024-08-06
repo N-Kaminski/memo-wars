@@ -1,0 +1,87 @@
+body{
+    background-image: url("img/fondo.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+    color: white;
+}
+
+main{
+    width: 730px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.section1{
+    background-color: rgba(255,255,255,0.2);
+    padding: 0 10px 10px 10px;
+    border-radius: 8px;
+}
+
+h1{
+    text-align: center;
+    font-size: 22px;
+    color: rgb(51, 51, 51);
+}
+
+button{
+    height: 135px;
+    width: 110px;
+    font-size: 0;
+    color: rgb(255, 255, 255);
+    background-image: url('img/carta.jpg');
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.section2{
+    background-color: rgba(255,255,255,0.2);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 270px;
+    height: 350px;
+    padding: 0 20px;
+}
+
+.estadisticas{
+    border: 1px solid white;
+    height: 90px;
+    width: 270px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 8px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section2 button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#reiniciar:hover {
+    background-color: #ddd;
+}
