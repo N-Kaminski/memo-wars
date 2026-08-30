@@ -35,10 +35,9 @@ let imagen = [
   "img/yoda.jpg",
   "img/yoda.jpg",
 ];
-imagenes = imagen.sort(() => {
+let imagenes = imagen.sort(() => {
   return Math.random() - 0.5;
 });
-console.log(imagenes);
 
 //Funcion tiempo
 function contarTiempo() {
@@ -60,14 +59,12 @@ function destapar(id) {
   }
 
   tarjetasDestapadas++;
-  console.log(tarjetasDestapadas);
 
   if (tarjetasDestapadas == 1) {
     // Mostrar 1° numero
     tarjeta1 = document.getElementById(id);
     primerResultado = imagenes[id];
     tarjeta1.innerHTML = `<img src="${primerResultado}" alt="imagen">`;
-    console.log("impimo 1er resultado", primerResultado);
 
     //Desactivar 1° boton
     tarjeta1.disabled = true;
@@ -76,7 +73,6 @@ function destapar(id) {
     tarjeta2 = document.getElementById(id);
     segundoResultado = imagenes[id];
     tarjeta2.innerHTML = `<img src="${segundoResultado}" alt="imagen">`;
-    console.log("imprimo 2do resultado", segundoResultado);
 
     //Desactivar 2° boton
     tarjeta2.disabled = true;
@@ -102,6 +98,8 @@ function destapar(id) {
           text: "Ganaste el juego!",
           icon: "success",
           confirmButtonText: "Ok",
+        }).then(() => {
+          location.reload();
         });
       }
     } else {
